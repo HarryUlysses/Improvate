@@ -1,0 +1,20 @@
+<view wx:if="{{loading}}" class="card">加载中...</view>
+<view wx:elif="{{plan}}" class="card">
+  <view>风格：{{plan.style}}</view>
+  <view>状态：{{plan.status}}</view>
+  <view wx:if="{{plan.coverUrl}}" style="margin-top:12rpx">
+    <image src="{{plan.coverUrl}}" style="width:100%;height:320rpx;object-fit:cover;border-radius:12rpx;" />
+  </view>
+  <view wx:if="{{plan.resultAssets}}" style="margin-top:12rpx">
+    <view>推荐发型：{{plan.resultAssets.hairstyle}}</view>
+    <view>穿搭：{{plan.resultAssets.outfit}}</view>
+    <view>配饰：{{plan.resultAssets.accessories && plan.resultAssets.accessories.join('、')}}</view>
+  </view>
+  <view wx:if="{{plan.comments && plan.comments.length}}" style="margin-top:12rpx">
+    <view>评论：</view>
+    <view wx:for="{{plan.comments}}" wx:key="id" style="margin-top:8rpx">
+      <view>{{item.content}}</view>
+    </view>
+  </view>
+</view>
+

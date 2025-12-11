@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/plan/create",
+    "pages/plan/detail",
+    "pages/task/status",
+    "pages/community/feed"
+  ],
+  "window": {
+    "navigationBarTitleText": "型男改造计划",
+    "navigationBarBackgroundColor": "#111",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "dark"
+  }
+}
+

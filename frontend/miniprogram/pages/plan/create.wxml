@@ -1,0 +1,14 @@
+<view class="card">
+  <view>选择风格</view>
+  <picker mode="selector" range="{{['urban','business','sports']}}" bindchange="onStyleChange">
+    <view class="picker">当前：{{style}}</view>
+  </picker>
+  <view style="height:20rpx"></view>
+  <button class="btn" bindtap="onChooseImage">上传参考照</button>
+  <view wx:if="{{imageUrl}}" style="margin-top:20rpx">
+    <image src="{{imageUrl}}" style="width:100%;height:300rpx;object-fit:cover;border-radius:12rpx;" />
+  </view>
+  <view style="height:20rpx"></view>
+  <button class="btn" loading="{{creating}}" bindtap="onSubmit">生成改造计划</button>
+</view>
+

@@ -1,0 +1,7 @@
+<view class="card">
+  <view>欢迎体验型男改造计划 Demo</view>
+  <button class="btn" bindtap="goCreate">创建改造计划</button>
+  <view style="height:20rpx"></view>
+  <button class="btn" bindtap="goFeed">社区浏览</button>
+</view>
+

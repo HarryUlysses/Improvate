@@ -1,0 +1,6 @@
+<view class="card">
+  <view>计划 ID：{{id}}</view>
+  <view>状态：{{plan.status || 'loading'}} </view>
+  <button class="btn" bindtap="goDetail" style="margin-top:12rpx">查看详情</button>
+</view>
+

@@ -1,0 +1,8 @@
+.card {
+  margin-bottom: 12rpx;
+}
+
+.btn {
+  margin-right: 8rpx;
+}
+
